@@ -29,10 +29,6 @@ public class ScoreBoard extends JavaPlugin implements Listener{
 	public void onEnable() {
 		this.getServer().getPluginManager().registerEvents(this, this);
 		
-		
-		
-		
-		
 		Objective serverName = board.registerNewObjective("ServerName", "");
 		serverName.setDisplaySlot(DisplaySlot.SIDEBAR);
 		//serverName.setDisplayName(ChatColor.DARK_AQUA + "Colenia");
@@ -78,6 +74,9 @@ public class ScoreBoard extends JavaPlugin implements Listener{
 		}.runTaskTimer(this, 0, 10);
 	}
 	
+	@Override
+	public void onDisable() {}
+		
 	@EventHandler
 	public void joinSB(PlayerJoinEvent event) {
 		Player player = event.getPlayer();
