@@ -1,0 +1,6 @@
+name: ColeniaScoreboard
+description: Scoreboard for Colenia
+version: 2.0.0
+main: me.pastamanmarco.ScoreBoard
+commands:
+    colsb:
